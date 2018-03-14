@@ -1,0 +1,10 @@
+<aspectj>
+	 <!-- <weaver options="-verbose -showWeaveInfo -debug"> -->
+	 <weaver>
+	 	<include within="org.apache.logging.log4j.core..*"/>
+	 	<include within="ch.uzh.ifi.seal.dynamicanalyzer.LogAspect"/>
+	 </weaver>
+	 	<aspects>
+		  <aspect name="ch.uzh.ifi.seal.dynamicanalyzer.LogAspect"/>
+	</aspects>
+</aspectj>
